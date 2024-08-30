@@ -2,215 +2,212 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마라탕 프랜차이즈 주방 설비</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>마라탕 프랜차이즈 주방 설비 - 전문성, 신뢰성, 효율성</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #8B0000;
+            --secondary-color: #FFA500;
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+            --white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Noto Sans KR', sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #8B0000;
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
+            color: var(--text-color);
+            background-color: var(--bg-color);
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
         }
 
-        .section-title {
-            margin: 40px 0 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #FFA500;
-            color: #8B0000;
-            font-size: 1.8rem;
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px 0;
         }
 
-        .card {
-            background: #fff;
-            margin: 20px 0;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        nav ul {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            justify-content: space-around;
+            list-style-type: none;
         }
 
-        .card h3 {
-            margin: 0;
-            color: #8B0000;
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
         }
 
-        .image-placeholder {
-            background-color: #ddd;
-            height: 200px;
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #aaa;
-            font-size: 1rem;
-            border-radius: 8px;
+            text-align: center;
+            color: var(--white);
         }
 
-        footer {
-            background: #36454F;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
 
         .btn {
             display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
             padding: 10px 20px;
-            background-color: #8B0000;
-            color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #FFA500;
+            background-color: #FF8C00;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            color: var(--primary-color);
         }
 
-        .highlight {
-            font-weight: bold;
-            color: #8B0000;
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            flex-basis: calc(33.333% - 20px);
+            background-color: var(--white);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .stats {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            margin: 20px 0;
+        }
+
+        .stat-item .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        footer {
+            background-color: #333;
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                flex-basis: 100%;
+            }
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>마라탕 프랜차이즈 주방 설비</h1>
-    <p>프랜차이즈 주방 솔루션의 새로운 기준</p>
-</header>
-
-<div class="container">
-    <!-- Main Page -->
-    <section id="main-page">
-        <h2 class="section-title">브랜드 소개 및 미션</h2>
-        <div class="card">
-            <p>저희는 <span class="highlight">마라탕 프랜차이즈 운영자</span>들을 위해 최적화된 주방 설비와 집기를 제공하는 전문 플랫폼입니다. 효율적인 매장 운영을 돕고, 투자 비용을 절감할 수 있는 토탈 솔루션을 제공합니다.</p>
-            <p><strong>미션:</strong> “전문성, 신뢰성, 효율성”이라는 핵심 가치를 바탕으로 마라탕 프랜차이즈의 성공적인 매장 운영을 지원합니다.</p>
-            <div class="image-placeholder">이미지 자리</div>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#services">서비스</a></li>
+                    <li><a href="#products">제품</a></li>
+                    <li><a href="#contact">문의</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <h2 class="section-title">주요 서비스 및 제품 하이라이트</h2>
-        <div class="card grid">
-            <div>
-                <h3>주방 설비 설치 서비스</h3>
-                <p>전문 설치팀이 초기 설계부터 최종 설치까지 책임지는 완벽한 서비스. 마라탕 요리에 최적화된 설비만을 제공합니다.</p>
-                <div class="image-placeholder">이미지 자리</div>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>마라탕 프랜차이즈 주방 설비의 새로운 기준</h1>
+            <p>전문성, 신뢰성, 효율성을 한 번에</p>
+            <a href="#contact" class="btn">지금 상담받기</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="services">
+            <h2 class="section-title">우리의 서비스</h2>
+            <div class="services">
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200" alt="주방 설비 설치">
+                    <h3>주방 설비 설치</h3>
+                    <p>전문 설치팀이 초기 설계부터 최종 설치까지 완벽하게 처리합니다.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200" alt="맞춤형 집기 제공">
+                    <h3>맞춤형 집기 제공</h3>
+                    <p>매장 컨셉에 맞춘 고품질의 조리 도구 및 그릇 세트를 제공합니다.</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://via.placeholder.com/400x200" alt="프랜차이즈 패키지">
+                    <h3>프랜차이즈 패키지</h3>
+                    <p>신규 창업자를 위한 스타트업 패키지부터 매장 확장 패키지까지 다양한 옵션을 제공합니다.</p>
+                </div>
             </div>
-            <div>
-                <h3>맞춤형 집기 제공</h3>
-                <p>매장 컨셉에 맞춘 그릇 및 조리 도구 세트 제공. 고온, 고강도 요리에 적합한 고품질의 집기만을 엄선했습니다.</p>
-                <div class="image-placeholder">이미지 자리</div>
+        </section>
+
+        <section id="stats" class="stats">
+            <div class="container">
+                <div class="stat-item">
+                    <div class="number">500+</div>
+                    <div class="label">설치 완료</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">98%</div>
+                    <div class="label">고객 만족도</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">10년+</div>
+                    <div class="label">업계 경력</div>
+                </div>
             </div>
-            <div>
-                <h3>프랜차이즈 전용 패키지 솔루션</h3>
-                <p>신규 창업자를 위한 스타트업 패키지부터 기존 매장 확장 패키지까지 다양한 옵션 제공.</p>
-                <div class="image-placeholder">이미지 자리</div>
-            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 마라탕 프랜차이즈 주방 설비. All rights reserved.</p>
         </div>
-
-        <h2 class="section-title">고객 후기 및 설치 사례</h2>
-        <div class="card">
-            <p>다양한 매장 설비 설치 전후 비교 사진과 상세 설명. 각 매장의 성공적인 도입 사례를 한눈에 볼 수 있습니다.</p>
-            <p>실제 프랜차이즈 운영자들의 솔직한 리뷰와 평점. 고객들의 목소리로 확인해보세요.</p>
-            <div class="image-placeholder">이미지 자리</div>
-        </div>
-    </section>
-
-    <!-- Kitchen Equipment Category -->
-    <section id="equipment-category">
-        <h2 class="section-title">주방 설비 카테고리</h2>
-        <div class="card">
-            <h3>마라탕 전용 설비</h3>
-            <ul>
-                <li><strong>전문 설비:</strong> 중식 전용 웍, 고출력 가스레인지, 전기 인덕션 등 마라탕 요리에 필요한 핵심 장비 소개.</li>
-                <li><strong>조리 설비:</strong> 자동화 조리기기, 원터치 식재료 분쇄기, 고효율 소스 보일러 등 시간을 절약하고 품질을 높이는 최신 조리 기술 제공.</li>
-                <li><strong>위생 설비:</strong> 산업용 식기세척기, 자동 손소독기, UV 소독기 등 위생 관리에 필수적인 장비.</li>
-            </ul>
-            <div class="image-placeholder">이미지 자리</div>
-        </div>
-
-        <h2 class="section-title">설비 상세 페이지 구성</h2>
-        <div class="card">
-            <p>각 제품의 상세 기능, 크기, 에너지 효율성 등 기술적인 세부사항 제공.</p>
-            <p>360도 제품 뷰어, 설치 영상 및 단계별 가이드, 추천 상품 및 세트 구성 제안, 고객 리뷰 및 평점을 통해 구매 결정을 돕습니다.</p>
-            <div class="image-placeholder">이미지 자리</div>
-        </div>
-    </section>
-
-    <!-- Kitchen Utensils Category -->
-    <section id="utensils-category">
-        <h2 class="section-title">주방 집기 카테고리</h2>
-        <div class="card">
-            <h3>마라탕 전용 그릇 및 집기</h3>
-            <ul>
-                <li><strong>그릇 및 용기:</strong> 내열성 강화 마라탕 전용 그릇 소개, 다양한 사이즈와 디자인 옵션 제공.</li>
-                <li><strong>조리 도구:</strong> 다양한 사이즈의 조리용 국자와 내열 소재의 집게 및 수저 세트.</li>
-            </ul>
-            <div class="image-placeholder">이미지 자리</div>
-        </div>
-
-        <h2 class="section-title">패키지 상품</h2>
-        <div class="card">
-            <p>신규 가맹점을 위한 종합 패키지로, 설비, 집기, 초기 설치 서비스를 포함한 올인원 솔루션.</p>
-            <p>기존 가맹점의 추가 확장을 위한 설비 및 집기 패키지로, 맞춤형 구성 옵션 제공.</p>
-            <div class="image-placeholder">이미지 자리</div>
-        </div>
-    </section>
-
-    <!-- Installation and Service Reservation -->
-    <section id="reservation">
-        <h2 class="section-title">설치 및 서비스 예약</h2>
-        <div class="card">
-            <h3>설치 서비스 소개</h3>
-            <p>주방 설비 설치 전문팀이 배기 설비, 전기 및 배관 공사, 방수 작업 등 까다로운 설치 과정도 완벽하게 처리합니다.</p>
-            <div class="image-placeholder">이미지 자리</div>
-
-            <h3>온라인 예약 시스템</h3>
-            <p>원하는 설치 날짜와 시간대를 손쉽게 선택할 수 있는 인터페이스. 선택한 서비스의 예약 가능 여부를 실시간으로 확인할 수 있습니다.</p>
-            <a href="#" class="btn">예약하기</a>
-        </div>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 마라탕 프랜차이즈 주방 설비. All rights reserved.</p>
-</footer>
-
+    </footer>
 </body>
 </html>
