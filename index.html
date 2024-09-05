@@ -3,375 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마라탕 프랜차이즈 주방 설비 - 맛있는 성공의 파트너</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>탕화쿵푸 - 전문 주방설비 납품업체</title>
     <style>
-        :root {
-            --primary-color: #C41E3A;
-            --secondary-color: #FF6B35;
-            --accent-color: #2EC4B6;
-            --bg-color: #F7F7F7;
-            --text-color: #333;
-            --white: #fff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
-        }
-
-        nav ul li a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: var(--secondary-color);
-        }
-
-        .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: var(--white);
-            padding-top: 80px;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .hero-content p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: var(--white);
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-color);
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        .section-title {
-            text-align: center;
-            margin: 60px 0 40px;
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background-color: var(--secondary-color);
-            margin: 20px auto 0;
-        }
-
-        .services {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .service-card {
-            flex-basis: calc(33.333% - 20px);
-            background-color: var(--white);
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .service-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
-        .stats {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .stats-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .stat-item {
-            margin: 20px 0;
-        }
-
-        .stat-item .number {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .testimonials {
-            background-color: var(--white);
-            padding: 60px 0;
-        }
-
-        .testimonial-card {
-            background-color: var(--bg-color);
-            border-radius: 10px;
-            padding: 30px;
-            margin: 20px 0;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial-card p {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
-        .testimonial-card .author {
-            font-weight: 500;
-            color: var(--primary-color);
-        }
-
-        .cta {
-            background-color: var(--accent-color);
-            color: var(--white);
-            text-align: center;
-            padding: 60px 0;
-        }
-
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: var(--white);
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .footer-section {
-            flex-basis: calc(33.333% - 20px);
-            margin-bottom: 20px;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 15px;
-            color: var(--secondary-color);
-        }
-
-        .social-icons a {
-            color: var(--white);
-            font-size: 1.5rem;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: var(--secondary-color);
-        }
-
-        @media (max-width: 768px) {
-            .service-card, .footer-section {
-                flex-basis: 100%;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-content p {
-                font-size: 1.2rem;
-            }
-        }
+        body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+        .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+        header { background: linear-gradient(to right, #FF4E50, #F9D423); color: white; padding: 1rem 0; }
+        nav { background: #333; padding: 0.5rem 0; }
+        nav ul { padding: 0; margin: 0; list-style: none; display: flex; justify-content: center; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+        section { padding: 4rem 0; }
+        .hero { background: url('/api/placeholder/1200/600') no-repeat center center/cover; color: white; text-align: center; padding: 100px 0; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .btn { display: inline-block; background: #FF4E50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .btn:hover { background: #F9D423; }
+        .products { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .product-card { width: 30%; background: #f4f4f4; margin-bottom: 2rem; padding: 1rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+        footer { background: #333; color: white; text-align: center; padding: 2rem 0; }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#home">홈</a></li>
-                    <li><a href="#services">서비스</a></li>
-                    <li><a href="#products">제품</a></li>
-                    <li><a href="#testimonials">고객후기</a></li>
-                    <li><a href="#contact">문의</a></li>
-                </ul>
-            </nav>
+            <h1>탕화쿵푸</h1>
+            <p>창업 전문 주방설비 전문가</p>
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>마라탕 프랜차이즈 주방 설비의 혁신</h1>
-            <p>맛있는 성공을 위한 최고의 파트너</p>
-            <a href="#contact" class="btn">무료 상담 받기</a>
-        </div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#home">홈</a></li>
+            <li><a href="#about">회사 소개</a></li>
+            <li><a href="#products">제품</a></li>
+            <li><a href="#services">서비스</a></li>
+            <li><a href="#portfolio">포트폴리오</a></li>
+            <li><a href="#contact">문의하기</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section id="services" class="container">
-            <h2 class="section-title">우리의 서비스</h2>
-            <div class="services">
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200" alt="주방 설비 설치">
-                    <h3>주방 설비 설치</h3>
-                    <p>전문 설치팀이 초기 설계부터 최종 설치까지 완벽하게 처리합니다. 효율적인 동선과 최적의 공간 활용을 보장합니다.</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200" alt="맞춤형 집기 제공">
-                    <h3>맞춤형 집기 제공</h3>
-                    <p>매장 컨셉에 맞춘 고품질의 조리 도구 및 그릇 세트를 제공합니다. 내구성과 디자인을 모두 고려한 제품으로 고객 만족도를 높입니다.</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/400x200" alt="프랜차이즈 패키지">
-                    <h3>프랜차이즈 패키지</h3>
-                    <p>신규 창업자를 위한 스타트업 패키지부터 매장 확장 패키지까지 다양한 옵션을 제공합니다. 귀하의 비즈니스 성장에 맞춘 솔루션을 제안합니다.</p>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>최고의 주방설비 솔루션</h1>
+                <p>40년 경력의 전문가가 제공하는 맞춤형 주방 설계 및 설비</p>
+                <a href="#contact" class="btn">지금 상담 받기</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>탕화쿵푸 소개</h2>
+                <p>탕화쿵푸는 40년 이상의 경험을 바탕으로 최고의 주방 설비 솔루션을 제공하는 전문 업체입니다. 라홍방 주방설비의 자부심으로, 2023년 한 해에만 200여 개 이상의 업체에 성공적으로 납품을 완료했습니다.</p>
+                <p>우리의 강점:</p>
+                <ul>
+                    <li>40년 이상의 풍부한 업계 경험</li>
+                    <li>맞춤형 주방 설계 및 제작</li>
+                    <li>고품질 설비와 전문적인 설치 서비스</li>
+                    <li>창업부터 운영까지 토탈 솔루션 제공</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="container">
+                <h2>Our 제품</h2>
+                <div class="products">
+                    <div class="product-card">
+                        <img src="/api/placeholder/400/300" alt="맞춤작업대">
+                        <h3>맞춤작업대</h3>
+                        <p>효율적인 주방 동선을 위한 맞춤형 작업대. 다양한 크기와 재질로 제작 가능.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/400/300" alt="튀김기">
+                        <h3>업소용 튀김기</h3>
+                        <p>대용량 조리에 적합한 고성능 튀김기. 온도 조절 기능으로 완벽한 요리 가능.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/400/300" alt="업소용 테이블">
+                        <h3>업소용 테이블 세트</h3>
+                        <p>편안함과 스타일을 동시에 갖춘 테이블과 의자 세트. 다양한 디자인 선택 가능.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="stats" class="stats">
+        <section id="services">
             <div class="container">
-                <div class="stats-container">
-                    <div class="stat-item">
-                        <div class="number">500+</div>
-                        <div class="label">설치 완료 매장</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="number">98%</div>
-                        <div class="label">고객 만족도</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="number">10년+</div>
-                        <div class="label">업계 경력</div>
-                    </div>
+                <h2>서비스</h2>
+                <ul>
+                    <li>맞춤 주방 도면 설계: 공간 활용을 극대화하는 최적의 주방 설계</li>
+                    <li>주방 설비 제작 및 납품: 고품질 자재를 사용한 내구성 높은 설비 제작</li>
+                    <li>전문 설치 서비스: 숙련된 기술자의 신속하고 정확한 설치</li>
+                    <li>창업 컨설팅: 메뉴 기획부터 주방 설계까지 토탈 창업 솔루션 제공</li>
+                    <li>애프터 서비스: 설치 후 지속적인 관리와 신속한 A/S</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>포트폴리오</h2>
+                <p>2023년 한 해 동안 200여 개 이상의 업체에 성공적으로 납품을 완료했습니다. 다양한 규모와 컨셉의 레스토랑, 카페, 호텔 등에 최적화된 주방 솔루션을 제공했습니다.</p>
+                <div class="portfolio-gallery">
+                    <!-- 포트폴리오 이미지를 여기에 추가 -->
+                    <img src="/api/placeholder/300/200" alt="프로젝트 1">
+                    <img src="/api/placeholder/300/200" alt="프로젝트 2">
+                    <img src="/api/placeholder/300/200" alt="프로젝트 3">
                 </div>
             </div>
         </section>
 
-        <section id="testimonials" class="testimonials">
+        <section id="contact">
             <div class="container">
-                <h2 class="section-title">고객 후기</h2>
-                <div class="testimonial-card">
-                    <p>"설비 설치부터 사후 관리까지 완벽했습니다. 덕분에 매장 오픈을 순조롭게 할 수 있었어요."</p>
-                    <div class="author">- 김철수, 마라왕 프랜차이즈 운영자</div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"맞춤형 집기 제안 덕분에 매장 분위기가 한층 업그레이드되었습니다. 고객들의 반응도 매우 좋아요!"</p>
-                    <div class="author">- 이영희, 마라천국 오너</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cta" class="cta">
-            <div class="container">
-                <h2>지금 바로 시작하세요</h2>
-                <p>최고의 마라탕 프랜차이즈를 위한 첫 걸음, 저희와 함께하세요.</p>
-                <a href="#contact" class="btn">무료 상담 신청</a>
+                <h2>문의하기</h2>
+                <p>프로젝트에 대해 상담받고 싶으신가요? 지금 바로 문의해주세요!</p>
+                <form>
+                    <input type="text" placeholder="이름" required>
+                    <input type="email" placeholder="이메일" required>
+                    <input type="tel" placeholder="연락처" required>
+                    <textarea placeholder="문의 내용" required></textarea>
+                    <button type="submit" class="btn">문의하기</button>
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>회사 정보</h3>
-                    <p>마라탕 프랜차이즈 주방 설비</p>
-                    <p>서울시 강남구 테헤란로 123</p>
-                    <p>사업자등록번호: 123-45-67890</p>
-                </div>
-                <div class="footer-section">
-                    <h3>고객 지원</h3>
-                    <p>전화: 02-1234-5678</p>
-                    <p>이메일: support@maratang-equipment.com</p>
-                    <p>운영시간: 평일 09:00 - 18:00</p>
-                </div>
-                <div class="footer-section">
-                    <h3>팔로우하세요</h3>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-           <p>&copy; 2024 마라탕 프랜차이즈 주방 설비. All rights reserved.</p>
+            <p>&copy; 2024 탕화쿵푸 주방설비. All rights reserved.</p>
+            <p>주소: 서울특별시 OO구 OO로 123번길 45 | 전화: 02-1234-5678 | 이메일: info@tanghwakungfu.com</p>
         </div>
     </footer>
 </body>
